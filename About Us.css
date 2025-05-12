@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #dc9d59;
+}
+
+@media (min-width: 1200px) {
+    .about-hero img {
+        max-width: 100%;
+    }
+    .our-mission p {
+        font-size: 18px;
+    }
+    .team h2, .testimonials h2, .call-to-action h2 {
+        font-size: 32px;
+    }
+    .cta-button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        text-align: left;
+    }
+    .about-hero img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .about-hero img {
+        max-width: 85%;
+    }
+    .team-member img {
+        max-width: 130px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    .about-hero img {
+        max-width: 80%;
+    }
+    .team-member {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .our-mission p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-hero img {
+        max-width: 75%;
+    }
+    .team-member {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .our-mission p {
+        font-size: 14px;
+    }
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c33339;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 0;
+    color: rgb(37, 34, 28);
+}
+
+.contact-info a img {
+    max-width: 20px;
+}
+
+.about-hero {
+    display: flex;
+    align-items: center;
+    background-color: #ffefd5;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.about-hero-content {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.about-hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-hero img:hover {
+    transform: scale(1.1);
+}
+
+.our-mission {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.our-mission h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.our-mission p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team {
+    background-color: #ffefd5;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.team-member img:hover {
+    border: 3px solid #dc9d59;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+.testimonials {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 18px;
+    color: #555;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #d87104;
+    color: white;
+}
+
+.call-to-action h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #dc9d59;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffbb66;
+    color: white;
+}
+
+footer {
+    background-color:#dc9d59;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

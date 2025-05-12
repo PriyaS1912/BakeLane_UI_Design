@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Orders - Bake Lane</title>
+    <link rel="stylesheet" href="co.css"> 
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/Bake Lane-Logo.png" alt="Bakery Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="co.html">Corporate Orders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <div><img src="Images/cart.png" alt="cart" height="60" width="60"></div>
+        </div>
+    </header>
+
+    <section class="corporate-section">
+        <h1>Corporate Orders</h1>
+        <p>At Bake Lane, we specialize in creating delicious, custom-made baked goods for corporate events, meetings, and celebrations. Whether you're looking to treat your team or impress clients, we have a wide variety of options to suit your needs.</p>
+
+        <form action="submit_corporate_order.php" method="post">
+            <h2>Request a Quote</h2>
+            <label for="company">Name:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="order-size">Guests:</label>
+            <input list="order-sizes" id="order-size" name="order-size" required>
+            <datalist id="order-sizes">
+                <option value="<50">
+                <option value="50<100">
+                <option value="100<150">
+                <option value="150<200">
+                <option value=">200">
+            </datalist>
+
+            <label for="occasion">Occasion:</label>
+            <input type="text" id="occasion" name="occasion" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="order-details">Order Details:</label>
+            <textarea id="order-details" name="order-details" rows="5" required></textarea>
+
+            <label for="date">Preferred Delivery Date:</label>
+            <input type="date" id="date" name="date" required>
+
+           <center> <button type="submit">Submit Request</button></center>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Bake Lane. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

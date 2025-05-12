@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bake Lane</title>
+    <link rel="stylesheet" href="Contact.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/Bake Lane-Logo.png" alt="Bakery Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="co.html">Corporate Orders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <div><img src="Images/cart.png" alt="cart" height="60" width="60"></div>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Please use the form below to get in touch with us.</p>
+
+        <div class="info-block">
+            <h2>Our Address</h2>
+            <p>Bake Lane Bakery</p>
+            <p>100ft Road, 2nd Stage,Indiranagar</p>
+            <p>Bangalore, Karnataka, 560001, India</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.3377694670084!2d77.64109204086287!3d12.969906205464437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a7f77f7397%3A0x304db3b432b41252!2s1131%20Bar%20%2B%20Kitchen!5e0!3m2!1sen!2sin!4v1724390928891!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </div>
+
+        <div class="info-block">
+            <h2>Phone Number</h2>
+            <p>(+91) 89712 86606</p>
+        </div>
+
+        <div class="info-block">
+            <h2>Bakery Hours</h2>
+            <p><b>Monday - Friday:</b> 8:00 AM - 8:00 PM</p>
+            <p><b>Saturday - Sunday:</b> 9:00 AM - 9:00 PM</p>
+        </div>
+
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Bake Lane. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
